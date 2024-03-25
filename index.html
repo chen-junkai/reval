@@ -91,9 +91,9 @@
           <h1 class="title is-1 publication-title">Evaluating Large Language Models with Runtime Behavior of Program Execution</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://chen-junkai.github.io">Junkai Chen*</a><sup>1</sup>,</span>
+              <a href="https://chen-junkai.github.io">Junkai Chen</a><sup>*,1</sup>,</span>
             <span class="author-block">
-              <a href="https://pan2013e.github.io/">Zhiyuan Pan*</a><sup>1</sup>,</span>
+              <a href="https://pan2013e.github.io/">Zhiyuan Pan</a><sup>*,1</sup>,</span>
             <span class="author-block">
               <a href="https://xing-hu.github.io">Xing Hu</a><sup>1</sup>,
             </span>
@@ -112,6 +112,7 @@
             <span class="author-block"><sup>1</sup>Zhejiang University,</span>
             <span class="author-block"><sup>2</sup>Concordia University,</span>
             <span class="author-block"><sup>3</sup>Peking University</span>
+            <span class="author-block"><sup>*</sup>Equal contribution.</span>
           </div>
 
           <div class="column has-text-centered">
@@ -256,31 +257,21 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Large language models for code (i.e., code LLMs) have shown strong code understanding 
+            and generation capabilities. To evaluate the capabilities of code LLMs in various aspects, 
+            many benchmarks have been proposed (e.g., HumanEval and ClassEval). Code reasoning is one 
+            of the most essential abilities of code LLMs, but existing benchmarks for code reasoning 
+            are not sufficient. Typically, they focus on predicting the input and output of a program, 
+            ignoring the evaluation of the intermediate behavior during program execution, as well as 
+            the logical consistency (e.g., the model should not give the correct output if the prediction 
+            of execution path is wrong) when performing the reasoning. To address these problems, in 
+            this paper, we propose a framework, namely REval, for evaluating code reasoning abilities 
+            and consistency of code LLMs with program execution. We utilize existing code benchmarks 
+            and adapt them to new benchmarks within our framework. A large-scale empirical study is 
+            conducted and most LLMs show unsatisfactory performance on both Runtime Behavior Reasoning 
+            (i.e., an average accuracy of 44.4%) and Incremental Consistency Evaluation (i.e., an average
+            IC score of 10.3). Evaluation results of current code LLMs reflect the urgent need for the 
+            community to strengthen the code reasoning capability of code LLMs.
           </p>
         </div>
       </div>
@@ -442,11 +433,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
+    <pre><code>@article{chen2024evaluating,
   author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
   title     = {Nerfies: Deformable Neural Radiance Fields},
   journal   = {ICCV},
-  year      = {2021},
+  year      = {2024},
 }</code></pre>
   </div>
 </section>
